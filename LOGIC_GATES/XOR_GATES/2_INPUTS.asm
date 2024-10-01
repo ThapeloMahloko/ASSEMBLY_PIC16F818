@@ -16,8 +16,7 @@
 ;******************************************************************
 ; SET VARIABLES
 INPUT_A             EQU     0                  ; INPUT_A IS RB0 (BIT 0)
-INPUT_B             EQU     1                  ; INPUT_B IS RB1 (BIT 1)
-INPUT_C            
+INPUT_B             EQU     1                  ; INPUT_B IS RB1 (BIT 1)         
 OUTPUT_PIN          EQU     0                  ; OUTPUT TO RA0 (BIT 0)
 
 ;******************************************************************
