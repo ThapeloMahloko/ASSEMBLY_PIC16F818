@@ -60,15 +60,14 @@ CASE_2:
                 
 CASE_3:
                     ; CASE 3: AB'C' 
-                    BTFSC   PORTB, INPUT_A    ; CHECK IF INPUT_A IS 0
+                    BTFSS   PORTB, INPUT_A    ; CHECK IF INPUT_A IS 1
                     GOTO    CASE_4            ; GOTO TO CASE 4
                     BTFSC   PORTB, INPUT_B    ; CHECK IF INPUT_B IS 0
                     GOTO    CASE_4            ; GOTO TO CASE 4
-                    BTFSS   PORTB, INPUT_C    ; CHECK IF INPUT_C IS 1
+                    BTFSC   PORTB, INPUT_C    ; CHECK IF INPUT_C IS 0
                     GOTO    CASE_4            ; GOTO TO CASE 4
-                    BTFSS   PORTB, INPUT_D    ; CHECK IF INPUT_D IS NOT 0
                     GOTO    SET_OUT           ; IF TRUE, SET THE OUTPUT
-                    GOTO    CASE_4            ; GOTO TO CASE 4
+
 
 CASE_4:
                     ; CASE 4: ABC
