@@ -36,7 +36,6 @@ START:
 ; TEST INPUTS
 ; TEST ALL CONDITIONS WHERE THE OUTPUT IS 1
 TEST_INPUTS:
-                    CLRF    TEMP              ; CLEAR TEMP REGISTER
                     GOTO    CASE_1            ; GOTO TO CASE 1
 CASE_1:
                     ; CASE 1: A'B'C
